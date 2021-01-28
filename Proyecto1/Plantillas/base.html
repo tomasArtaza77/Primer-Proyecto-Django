@@ -1,0 +1,23 @@
+<html>
+
+
+<head>
+    <title>
+        {% block title %} {% endblock %} 
+    </title>
+</head>
+
+<body>
+    <h1 style="background-color:blue; color: antiquewhite; text-align:center;">The Office</h1>  
+    
+    {% include "superior/barra.html" %}
+
+    <h4 style="text-align: right;">Serie de TV (2005-2013). 9 temporadas. 188 episodios. </h4> 
+
+    {% block content %} {% endblock %} 
+
+    <p style="background-color:rgb(5, 165, 27); color: antiquewhite; text-align:right;">Serie de TV. Comedia | Sitcom. Remake. Falso documental. Trabajo/empleo | The Office | The Office (EEUU)</p>
+ 
+</body>
+
+</html>

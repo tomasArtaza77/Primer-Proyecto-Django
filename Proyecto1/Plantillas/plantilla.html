@@ -1,0 +1,31 @@
+<html>
+    <body>
+    {% include "superior/barra.html" %}
+    
+    
+
+    <h1 style="color: #f30d0d;">
+    Estoy ahora emi, sali de ahi y venia jugar xdxd
+    </h2>
+    <p>Tu nombre de usuario es: {{nombre_persona}} {{apellido_persona}} </p> 
+    <p>La fecha actual es: {{hora_actual.day}}/{{hora_actual.month}}/{{hora_actual.year}} </p> 
+     
+    <p><strong>Temas del curso:</strong></p>
+    <p>
+        <ul> 
+        
+        {%if temas%}
+
+            {% for elTema in temas %} 
+                <li>{{elTema}}</li>
+
+            {% endfor %}
+        {%else%}
+            <p>No hay elementos que mostrar</p>
+        {% endif %}            
+        </ul>
+
+    </p> 
+<body>
+
+    <html>
